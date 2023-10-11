@@ -1,0 +1,99 @@
+.hero {
+    margin-top: 45px;
+
+    .container {
+        background: url("../img/hero.png") no-repeat;
+        max-width: 1280px;
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+        padding: 20px;
+        background-size: cover;
+    }
+}
+
+
+.hero__info {
+    padding-top: 137px;
+    margin-left: 85px;
+    max-width: 445px;
+    width: 100%;
+}
+
+.hero__heading {
+    width: 100%;
+    color: var(--color-LightWhite);
+    font-family: "Fraunces";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.hero__text {
+    margin: 0;
+    padding: 0;
+    color: var(--color-LightWhite);
+    font-family: "Barlow";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    line-height: 26px;
+    padding-bottom: 56px;
+}
+
+
+.hero__btn {
+    @include btn;
+}
+
+    
+@media only screen and (max-width: 768px) {
+    .hero .container {
+        background-image: url("../img/tablet.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+    }
+
+    .hero__info {
+        padding-top: 40px;
+        margin-left: 58px;
+    }
+
+    .hero__heading {
+        padding-bottom: 24px;
+        font-size: 48px;
+    }
+
+    .hero__text {
+        padding-bottom: 40px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .hero .container {
+        background-image: url("../img/telefon.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero__info {
+       margin: 0px 24px;
+    }
+
+    .hero__heading {
+        font-size: 40px;
+    }
+
+    .hero__text  {
+        padding-bottom: 39px;
+    }
+} 
+

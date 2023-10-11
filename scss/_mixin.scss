@@ -1,0 +1,42 @@
+@mixin Flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin Link {
+    color: var(--color-DimGrey);
+    font-family: "Barlow";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+
+
+    &:hover {
+        color: black;
+    }
+}
+
+@mixin btn {
+    color: var(--color-LightWhite);
+    text-align: center;
+    font-family: "Fraunces";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    border-radius: 6px;
+    background-color: #66D2CF;
+    width: 100%;
+    max-width: 217px;
+    padding: 16px 31px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+
+    &:hover {
+        color: black;
+    }
+}

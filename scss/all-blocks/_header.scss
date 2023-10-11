@@ -1,0 +1,75 @@
+.header {
+    margin-top: 10px;
+
+    .container {
+        @include Flex;
+    }
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item+.nav__item {
+    padding-left: 33px;
+}
+
+.nav__link {
+    @include Link;
+
+}
+
+
+
+.btn__menu {
+    display: none;
+}
+
+.btn__exit {
+    display: none;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    display: none;
+}
+
+.header__mobil {
+    display: none;
+}
+
+@media only screen and (max-width: 602px) {
+    .nav {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+
+    .btn:hover {
+
+        .btn__menu {
+            display: none;
+        }
+
+        .btn__exit {
+            display: block;
+        }
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__mobil {
+        display: block;
+    }
+
+
+}
